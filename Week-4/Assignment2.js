@@ -7,12 +7,12 @@ Person.prototype.initialize = function(name, age){
 
 // TODO: create the class Teacher and a method teach
 class Teacher extends Person{
-	constructor(name,age){
-  super(name,age);
-  }
-  teach (subject){
-    console.log(this.name+" teaches "+subject);
-  }
+    constructor(name,age){
+        super(name,age);
+    }
+    teach(subject){
+        console.log(this.name+" teaches "+subject);
+    }
 }
 Teacher.prototype = new Person();
 
