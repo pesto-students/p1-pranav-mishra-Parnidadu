@@ -1,15 +1,23 @@
-# 6.5: Pair With Given Difference
+#  Sum
+# Given an array S of n integers, find three integers in S such that the sum is closest to agiven number, target.
+# Return the sum of the three integers.Assume that there will only be one 
+# solutionExample: given array S = {-1 2 1 -4}, and target = 1. 
+# The sum that is closest to thetarget is 2. (-1 + 2 + 1 = 2)
 
-def DiffPair(arr,target):
-    paired = 0
+import math
+def findingSum(arr,target):
+    closest = math.inf
+    sum = 0
     for i in range(len(arr)):
         for j in range(i+1,len(arr)):
-            if (arr[i]-arr[j])==target or (arr[i]-arr[j]) == -target:
-                paired+=1
-    return paired
+            for k in range(j+1,len(arr)):
+                sum = arr[i]+arr[j]+arr[k]
+                if (sum-target)<closest and (sum-target)>=0:
+                    closest = sum
+    
+    return closest
 
-A = [5, 10, 3, 2, 50, 80] #B = 78 Input 2: 
-print(DiffPair(A,78))
-A = [-10, 20]
 
-print(DiffPair(A,30))
+S = [-1, 2, 1, -4]
+
+print(findingSum(S,1))
