@@ -34,16 +34,19 @@ export default function Form(){
                 </p>
             </div>
             <br></br>
+            <div className='form'>
             <form onSubmit={handleSubmit}>
-            <input
-                value={url}
-                onChange={(event) => setUrl(event.target.value)}
-            ></input>
-            <button valu="submit" name="submit">
-                Go
-            </button>
+                <input
+                    value={url}
+                    onChange={(event) => setUrl(event.target.value)}
+                ></input>
+                <button valu="submit" name="submit">
+                    Go
+                </button>
             </form>
-            <div>
+            </div>
+            <br></br>
+            <div className='form'>
             <input
             type="text" 
             value={shorten} 

@@ -12,11 +12,13 @@ input{
     height:30px;
     border-radius: 10px;
     /* height: auto */
+    align-self: left;
     border: 1px solid black;
 }
 button{
     height:30px;
     width:auto;
+    align-self: right;
 }
 .clipboard{
     margin-top: 50px;
@@ -33,4 +35,10 @@ button{
 }
 .header>p{
     font-size: 20px;
+}
+.form{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
