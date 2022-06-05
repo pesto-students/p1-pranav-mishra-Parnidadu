@@ -1,3 +1,18 @@
+
+# URL Shortner
+
+Shorten long URLs easily using this App.
+Shortening your URLs will also make the links look elegant and clean. Sometimes it's the shorter things that we prefer.
+
+
+## Screenshots
+
+![App Screenshot](https://photos.app.goo.gl/HkzXoqquz6dr6j4q7)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
