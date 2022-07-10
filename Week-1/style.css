@@ -1,0 +1,70 @@
+.container{
+  display:grid;
+  grid-template-rows:80% 10%;
+  width: 100vw;
+  height:100vh;
+}
+.footer{
+  display:grid;
+  grid-template-columns:40% 60%;
+  background:#0080c0
+}
+.main{
+  display: grid;
+  grid-template-columns:5% 95%;
+  width: 100vw;
+  height:100vh;
+}
+.body{
+  display:grid;
+  grid-template-rows:40% 60%;
+  width: 100vw;
+  height:100vh;
+}
+*{
+  font-family:lato;
+}
+
+.sidebar{
+  background-color:#ddd;
+  i{
+  background-color:#ddd;
+  margin-top: -1px;
+  display: block;
+  width: 35px;
+  position: relative;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  cursor: default;
+    align-content: center;
+  }
+}
+
+.header{
+  background:grey;
+  display:flex;
+}
+.image{
+  padding:1em;
+  margin: 1em;
+  width: 20%;
+  height:70%;
+}
+.mid{
+  background:#ddd;
+}
+#songs {
+  font-family: lato;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#songs td, #songs th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  counter-increment: row-num;
+}
+
+#songs tr:nth-child(even){background-color: #f2f2f2;}
+
+#songs tr:hover {background-color: #ddd;}
